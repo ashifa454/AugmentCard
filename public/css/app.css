@@ -1,0 +1,766 @@
+
+body {
+    margin: 0;
+    background-color: #fcfcfc
+  }
+  
+  /* Disable ugly boxes around images in IE10 */
+  a img{
+    border: 0px;
+  }
+  
+  ::-moz-selection {
+    background-color: #F15A24;
+    color: #fff;
+  }
+  
+  ::selection {
+    background-color: #F15A24;
+    color: #fff;
+  }
+  
+  .mdl-textfield__input {
+    color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .android-header .mdl-menu__container {
+    z-index: 50;
+    margin: 0 !important;
+  }
+  
+  
+  .mdl-textfield--expandable {
+    width: auto;
+  }
+  
+  .android-fab {
+    position: absolute;
+    right: 20%;
+    bottom: -26px;
+    z-index: 3;
+    background: #64ffda !important;
+    color: black !important;
+  }
+  
+  .android-mobile-title {
+    display: none !important;
+  }
+  
+  
+  .android-logo-image {
+    height: 30px;
+    width: 100px;
+  }
+  
+  
+  .android-header {
+    overflow: visible;
+    background-color: white;
+  }
+  
+    .android-header .material-icons {
+      color: #767777 !important;
+    }
+  
+    .android-header .mdl-layout__drawer-button {
+      background: transparent;
+      color: #767777;
+    }
+  
+    .android-header .mdl-navigation__link {
+      color: #757575;
+      font-weight: 700;
+      font-size: 14px;
+    }
+  
+    .android-navigation-container {
+      /* Simple hack to make the overflow happen to the left instead... */
+      direction: rtl;
+      order: 1;
+      width: 500px;
+      transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+          width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    .android-navigation {
+      /* ... and now make sure the content is actually LTR */
+      direction: ltr;
+      justify-content: flex-end;
+      width: 800px;
+    }
+  
+    .android-search-box.is-focused + .android-navigation-container {
+      opacity: 0;
+      width: 100px;
+    }
+  
+  
+    .android-navigation .mdl-navigation__link {
+      display: inline-block;
+      height: 60px;
+      line-height: 68px;
+      background-color: transparent !important;
+      border-bottom: 4px solid transparent;
+    }
+  
+      .android-navigation .mdl-navigation__link:hover {
+        border-bottom: 4px solid #F15A24;
+      }
+  
+    .android-search-box {
+      order: 2;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+  
+    .android-more-button {
+      order: 3;
+    }
+  
+  
+  .android-drawer {
+    border-right: none;
+  }
+  
+    .android-drawer-separator {
+      height: 1px;
+      background-color: #dcdcdc;
+      margin: 8px 0;
+    }
+  
+    .android-drawer .mdl-navigation__link.mdl-navigation__link {
+      font-size: 14px;
+      color: #757575;
+    }
+  
+    .android-drawer span.mdl-navigation__link.mdl-navigation__link {
+      color: #F15A24;
+    }
+  
+    .android-drawer .mdl-layout-title {
+      position: relative;
+      background: #FCFCFE;
+      height: 160px;
+    }
+  
+      .android-drawer .android-logo-image {
+        position: absolute;
+        bottom: 16px;
+      }
+  
+  .android-be-together-section {
+    position: relative;
+    height: 500px;
+    width: auto;
+    background-color: #f3f3f3;
+    background: url('http://i.imgur.com/1MaQ65u.jpg') center 5% no-repeat;
+    background-size: cover;
+  }
+  
+  .logo-font {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1;
+    color: #767777;
+    font-weight: 500;
+  }
+  
+  .android-slogan {
+    font-size: 60px;
+    padding-top: 120px;
+    color: #FCFCFC;
+  }
+  
+  .android-sub-slogan {
+    font-size: 21px;
+    padding-top: 24px;
+    color: #FCFCFC;
+  }
+  
+  .android-create-character {
+    font-size: 21px;
+    padding-top: 400px;
+  }
+  
+    .android-create-character a {
+      text-decoration: none;
+      color: #767777;
+      font-weight: 300;
+    }
+  
+  .android-screen-section {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  
+  .android-screens {
+    text-align: right;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+  
+  .android-screen {
+    text-align: center;
+  }
+  
+  .android-screen .android-link {
+    margin-top: 16px;
+    display: block;
+    z-index: 2;
+  }
+  
+  .android-image-link {
+    text-decoration: none;
+  }
+  
+  .android-wear {
+    display: inline-block;
+    width: 160px;
+    margin-right: 32px;
+  }
+  
+    .android-wear .android-screen-image {
+      width: 40%;
+      z-index: 1;
+    }
+  
+  
+  .android-phone {
+    display: inline-block;
+    width: 64px;
+    margin-right: 48px;
+  }
+  
+    .android-phone .android-screen-image {
+      width: 100%;
+      z-index: 1;
+    }
+  
+  
+  .android-tablet {
+    display: inline-block;
+    width: 110px;
+    margin-right: 64px;
+  }
+  
+    .android-tablet .android-screen-image {
+      width: 100%;
+      z-index: 1;
+    }
+  
+    .android-tablet .android-link {
+      display: block;
+      z-index: 2;
+    }
+  
+  
+  .android-tv {
+    display: inline-block;
+    width: 300px;
+    margin-right: 80px;
+  }
+  
+    .android-tv .android-screen-image {
+      width: 100%;
+      z-index: 1;
+    }
+  
+  
+  .android-auto {
+    display: inline-block;
+    width: 300px;
+    overflow: hidden;
+  }
+  
+    .android-auto .android-screen-image {
+      display: block;
+      height: 300px;
+      z-index: 1;
+    }
+  
+  
+  .android-wear-section {
+    position: relative;
+    background-size: cover;
+    height: 600px;
+  }
+  
+  .android-wear-band {
+    bottom: 0;
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+    background-color: #FFFFFF;
+  }
+  
+  .android-wear-band-text {
+    max-width: 800px;
+    padding: 24px;
+    text-align: left;
+    color: #212121;
+  }
+  .android-card-holder{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: flex;
+  }
+    .android-wear-band-text p {
+      padding-top: 8px;
+    }
+  
+  .android-link {
+    text-decoration: none;
+  }
+  
+    .android-link:hover {
+      color: #7cb342 !important;
+    }
+  
+    .android-link .material-icons {
+      position: relative;
+      top: -1px;
+      vertical-align: middle;
+    }
+  
+  .android-alt-link {
+    text-decoration: none;
+    color: #64ffda !important;
+    font-size: 16px;
+  }
+  
+    .android-alt-link:hover {
+      color: #00bfa5 !important;
+    }
+  
+    .android-alt-link .material-icons {
+      position: relative;
+      top: 6px;
+    }
+  
+  .android-customized-section {
+    text-align: center;
+  }
+  
+  .android-customized-section-text {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 16px 0 16px;
+  }
+  
+    .android-customized-section-text p {
+      padding-top: 16px;
+    }
+  
+  .android-customized-section-image {
+    background: url('https://getmdl.io/images/devices.jpg') center top no-repeat;
+    background-size: cover;
+    height: 400px;
+  }
+  
+  .android-more-section {
+    padding: 20px 0;
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+    .android-more-section .android-section-title {
+      margin-left: 12px;
+      padding-bottom: 4px;
+    }
+  
+  .android-card-container {
+  }
+  
+    .android-card-container .mdl-card__media {
+      overflow: hidden;
+      background: transparent;
+    }
+  
+      .android-card-container .mdl-card__media img {
+        width: 100%;
+      }
+  
+    .android-card-container .mdl-card__title {
+      background: transparent;
+      height: auto;
+    }
+  
+    .android-card-container .mdl-card__title-text {
+      color: black;
+      height: auto;
+    }
+  
+    .android-card-container .mdl-card__supporting-text {
+      height: auto;
+      color: black;
+      padding-bottom: 56px;
+    }
+  
+    .android-card-container .mdl-card__actions {
+      position: absolute;
+      bottom: 0;
+    }
+  
+    .android-card-container .mdl-card__actions a {
+      border-top: none;
+      font-size: 16px;
+    }
+  
+  .android-footer {
+    background-color: #212121;
+    position: relative;
+  }
+  
+    .android-footer a:hover {
+      color: #F15A24;
+    }
+  
+    .android-footer .mdl-mega-footer--top-section::after {
+      border-bottom: none;
+    }
+  
+    .android-footer .mdl-mega-footer--middle-section::after {
+      border-bottom: none;
+    }
+  
+    .android-footer .mdl-mega-footer--bottom-section {
+      position: relative;
+    }
+  
+    .android-footer .mdl-mega-footer--bottom-section a {
+      margin-right: 2em;
+    }
+  
+    .android-footer .mdl-mega-footer--right-section a .material-icons {
+      position: relative;
+      top: 6px;
+    }
+  
+  
+  .android-link-menu:hover {
+    cursor: pointer;
+  }
+  
+  
+  /**** Mobile layout ****/
+  @media (max-width: 900px) {
+    .android-navigation-container {
+      display: none;
+    }
+  
+    .android-title {
+      display: none !important;
+    }
+  
+    .android-mobile-title {
+      display: block !important;
+      position: absolute;
+      left: calc(50% - 70px);
+      top: 12px;
+      transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
+       consecutive "+" operators in some cases. Therefore, we need to use both
+       here to cover all the bases. */
+    .android.android-search-box.is-focused ~ .android-mobile-title,
+    .android-search-box.is-focused + .android-navigation-container + .android-mobile-title {
+      opacity: 0;
+    }
+  
+    .android-more-button {
+      display: none;
+    }
+  
+    .android-search-box.is-focused {
+      width: calc(100% - 48px);
+    }
+  
+    .android-search-box .mdl-textfield__expandable-holder {
+      width: 100%;
+    }
+  
+    .android-be-together-section {
+      height: 350px;
+    }
+  
+    .android-slogan {
+      font-size: 26px;
+      margin: 0 16px;
+      padding-top: 24px;
+    }
+  
+    .android-sub-slogan {
+      font-size: 16px;
+      margin: 0 16px;
+      padding-top: 8px;
+    }
+  
+    .android-create-character {
+      padding-top: 200px;
+      font-size: 16px;
+    }
+  
+    .android-create-character img {
+      height: 12px;
+    }
+  
+    .android-fab {
+      display: none;
+    }
+  
+    .android-wear-band-text {
+      margin-left: 0;
+      padding: 16px;
+    }
+  
+    .android-footer .mdl-mega-footer--bottom-section {
+      display: none;
+    }
+  }
+  .demo-ribbon {
+    width: 100%;
+    height: 40vh;
+    background-color: #3F51B5;
+    flex-shrink: 0;
+  }
+  
+  .demo-main {
+    margin-top: -30vh;
+    flex-shrink: 0;
+  }
+  
+  .demo-header .mdl-layout__header-row {
+    padding-left: 40px;
+  }
+  
+  .demo-container {
+    max-width: 1600px;
+    width: calc(100% - 16px);
+    margin: 0 auto;
+  }
+  
+  .demo-content {
+    border-radius: 2px;
+    padding: 80px 56px;
+    margin-bottom: 80px;
+  }
+  
+  .demo-layout.is-small-screen .demo-content {
+    padding: 40px 28px;
+  }
+  
+  .demo-content h3 {
+    margin-top: 48px;
+  }
+  
+  .demo-footer {
+    padding-left: 40px;
+  }
+  
+  .demo-footer .mdl-mini-footer--link-list a {
+    font-size: 13px;
+  }
+  .social-button {
+    background-position: 25px 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    font-size: .9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 3px;
+    margin: 10px auto;
+    outline: rgb(255, 255, 255) none 0px;
+    padding-left: 20%;
+    transition: all 0.2s cubic-bezier(0.72, 0.01, 0.56, 1) 0s;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  
+  #facebook-connect {
+    background: rgb(255, 255, 255) url('https://eswarasai.com/projects/social-login/img/facebook.svg') no-repeat scroll 5px 0px / 30px 50px padding-box border-box;
+    border: 1px solid rgb(60, 90, 154);
+  }
+  
+  #facebook-connect:hover {
+    border-color: rgb(60, 90, 154);
+    background: rgb(60, 90, 154) url('https://eswarasai.com/projects/social-login/img/facebook-white.svg') no-repeat scroll 5px 0px / 30px 50px padding-box border-box;
+    -webkit-transition: all .8s ease-out;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease-out;
+  }
+  
+  #facebook-connect span {
+    box-sizing: border-box;
+    color: rgb(60, 90, 154);
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0px none rgb(255, 255, 255);
+    outline: rgb(255, 255, 255) none 0px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  
+  #facebook-connect:hover span {
+    color: #FFF;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  #google-connect {
+    background: rgb(255, 255, 255) url('https://eswarasai.com/projects/social-login/img/google-plus.png') no-repeat scroll 5px 0px / 50px 50px padding-box border-box;
+    border: 1px solid rgb(220, 74, 61);
+  }
+  
+  #google-connect:hover {
+    border-color: rgb(220, 74, 61);
+    background: rgb(220, 74, 61) url('https://eswarasai.com/projects/social-login/img/google-plus-white.png') no-repeat scroll 5px 0px / 50px 50px padding-box border-box;
+    -webkit-transition: all .8s ease-out;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease-out;
+  }
+  
+  #google-connect span {
+    box-sizing: border-box;
+    color: rgb(220, 74, 61);
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0px none rgb(220, 74, 61);
+    outline: rgb(255, 255, 255) none 0px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  
+  #google-connect:hover span {
+    color: #FFF;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  
+  #twitter-connect {
+    background: rgb(255, 255, 255) url('https://eswarasai.com/projects/social-login/img/twitter.png') no-repeat scroll 5px 1px / 45px 45px padding-box border-box;
+    border: 1px solid rgb(85, 172, 238);
+  }
+  
+  #twitter-connect:hover {
+    border-color: rgb(85, 172, 238);
+    background: rgb(85, 172, 238) url('https://eswarasai.com/projects/social-login/img/twitter-white.png') no-repeat scroll 5px 1px / 45px 45px padding-box border-box;
+    -webkit-transition: all .8s ease-out;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease-out;
+  }
+  
+  #twitter-connect span {
+    box-sizing: border-box;
+    color: rgb(85, 172, 238);
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0px none rgb(220, 74, 61);
+    outline: rgb(255, 255, 255) none 0px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  
+  #twitter-connect:hover span {
+    color: #FFF;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  #linkedin-connect {
+    background: rgb(255, 255, 255) url('https://eswarasai.com/projects/social-login/img/linkedin.svg') no-repeat scroll 13px 0px / 28px 45px padding-box border-box;
+    border: 1px solid rgb(0, 119, 181);
+  }
+  
+  #linkedin-connect:hover {
+    border-color: rgb(0, 119, 181);
+    background: rgb(0, 119, 181) url('https://eswarasai.com/projects/social-login/img/linkedin-white.svg') no-repeat scroll 13px 0px / 28px 45px padding-box border-box;
+    -webkit-transition: all .8s ease-out;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease-out;
+  }
+  
+  #linkedin-connect span {
+    box-sizing: border-box;
+    color: rgb(0, 119, 181);
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0px none rgb(0, 119, 181);
+    outline: rgb(255, 255, 255) none 0px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  
+  #linkedin-connect:hover span {
+    color: #FFF;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  hr {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 8px auto;
+    height: 0;
+    width: 20%;
+    max-height: 0;
+    font-size: 1px;
+    line-height: 0;
+    clear: both;
+    border: none;
+    border-top: 5px solid #aaaaaa;
+    border-bottom: 3px solid #ffffff;
+  }
+  .demo-avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 24px;
+  }
