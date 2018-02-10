@@ -15,7 +15,9 @@ class MobileController extends Controller
         if(count($user)>0){
             $usertype='old';
             DB::table('mobileData')->where('mobile',$mobile)->update(['onesignal'=>$oneSignal]);
-            $greetingCards=DB::table('gifts')->where('userId',$user[0]->id)->get();
+            $greetingCards=DB::table('gifts')->where('userId',$user[0]->mobile)
+            ->orderBy('dateTime', 'desc')
+            ->get();
             if(count($greetingCards)>0){
                 $hasdata=true;
                 $data=$greetingCards[0];
@@ -24,7 +26,9 @@ class MobileController extends Controller
             }
         }else{
             $userid=DB::table('mobileData')->insertGetId(['mobile'=>$mobile,'onesignal'=>$oneSignal]);
-            DB::table('gifts')->where('mobile',$mobile)->get();
+            DB::table('gifts')->where('userId',$mobile)
+            ->orderBy('dateTime', 'desc')
+            ->get();
             $userType='new';
         }
         return json_encode([
