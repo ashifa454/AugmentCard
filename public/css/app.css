@@ -150,7 +150,7 @@ body {
   
   .android-be-together-section {
     position: relative;
-    height: 500px;
+    height: 90vh;
     width: auto;
     background-color: #f3f3f3;
     background: url('http://i.imgur.com/1MaQ65u.jpg') center 5% no-repeat;
@@ -166,7 +166,7 @@ body {
   
   .android-slogan {
     font-size: 60px;
-    padding-top: 120px;
+    padding-top: 30vh;
     color: #FCFCFC;
   }
   

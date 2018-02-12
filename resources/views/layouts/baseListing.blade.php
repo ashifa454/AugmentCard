@@ -3,7 +3,7 @@
   @include('head/index')
   <style>
     .android-more-section{
-      max-width:900px;
+      max-width:91%;
     }
   </style>
   <body>
@@ -12,24 +12,13 @@
       <div class="android-content mdl-layout__content">
         <a name="top"></a>
         <div class="android-more-section">
-          <div class="android-section-title mdl-typography--display-1-color-contrast">Choose a Base Image</div>
+          <div class="android-section-title mdl-typography--display-1-color-contrast">
+            <center>Select a Card.</center></div>
           <div class="android-card-container mdl-grid">
             @foreach($base as $item)
             <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
-                <img src="{{asset($item->image)}}">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">{{$item->title}}</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">{{$item->description}}</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{URL::to('overlay/'.$item->id.'.png')}}">
-                   Continue
-                   <i class="material-icons">chevron_right</i>
-                 </a>
+                <a href="{{URL::to('overlay/'.$item->id.'.png')}}"> <img src="{{asset($item->image)}}"></a>
               </div>
             </div>          
             @endforeach

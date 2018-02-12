@@ -10,7 +10,8 @@ class Generatecard extends Controller
     public function getView(Request $request,$overlay){
         if(session('baseImage')){
             session(['overlay'=>$overlay]);
-            return view('layouts.orderComplete',['overlayImage'=>$overlay]);
+            $image=DB::table('base')->where('id',session('baseImage'))->select('image')->get();
+            return view('layouts.orderComplete',['overlayImage'=>$overlay,'base'=>$image[0]->image]);
         }else{
             return redirect()->route('home');
         }

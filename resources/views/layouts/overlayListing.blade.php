@@ -34,9 +34,8 @@
       <div class="android-content mdl-layout__content">
         <a name="top"></a>
         <div class="android-more-section">
-          <div class="android-section-title mdl-typography--display-1-color-contrast">Choose an Overlay</div>
           <div class="android-card-container mdl-grid">
-            @foreach($overlay as $item)
+            <!--@foreach($overlay as $item)
             <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
                 <img src="{{asset($item->image)}}">
@@ -54,24 +53,13 @@
                  </a>
               </div>
             </div>          
-            @endforeach
-                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            @endforeach!-->
+                <div style="margin:auto;" class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                           <div class="mdl-card__media">
-                            <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX11787748.jpg">
+                            <label for="video"><img src="https://informationstrategyrsm.files.wordpress.com/2015/10/woody-selfie.jpg"></label>
                           </div>
                           <div class="mdl-card__title">
-                             <h4 class="mdl-card__title-text">Add Your Overlay</h4>
-                          </div>
-                          <div class="mdl-card__supporting-text">
-                            <span class="mdl-typography--font-light mdl-typography--subhead">
-                              Your Emotions can only only be expressed by you, Upload Any Image or a Video to Overlay
-                            </span>
-                          </div>
-                          <div class="mdl-card__actions">
-                             <label for="video" class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase">
-                               Upload
-                               <i class="material-icons">file_upload</i>
-                             </label>
+                             <h4 class="mdl-card__title-text">Record a special Message and Uplaod</h4>
                           </div>
                         </div>
           </div>

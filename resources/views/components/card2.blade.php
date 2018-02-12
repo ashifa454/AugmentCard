@@ -1,6 +1,6 @@
 <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--2dp">
     <div class="mdl-card__media">
-      <img src="{{asset('assets/BASE1.jpeg')}}">
+      <img src="{{asset('.$base.')}}">
     </div>
     <div class="mdl-card__title">
        <h4 class="mdl-card__title-text">Enter Mobile Number Whom You wanna Send?</h4>
