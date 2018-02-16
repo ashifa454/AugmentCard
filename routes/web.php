@@ -12,7 +12,6 @@
 */
 
 Route::get('/', function () {
-    
     return view('welcome',['isHome'=>1]);
 })->name('home');
 //Auth::routes();

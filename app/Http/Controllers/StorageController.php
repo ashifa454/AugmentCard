@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use FFMpeg;
 use Illuminate\Http\Request;
 use Storage;
 class StorageController extends Controller
