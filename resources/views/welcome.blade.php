@@ -1,6 +1,18 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
   @include('head/index')
+  <style>
+    .screen_button_group{
+      margin-top: 30vh; 
+    }
+    .screen_button_group button{
+      margin-right: 20px;
+      padding-left: 100px;
+      height: 45px;      
+      padding-right: 100px;
+      margin-left: 20px;
+    }
+  </style>
   <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       @include('head/header')
@@ -9,8 +21,13 @@
         <div class="android-be-together-section mdl-typography--text-center">
           <div class="logo-font android-slogan">Express Your <span id="SLOGAN"></span></div>
           <div class="logo-font android-sub-slogan">Your Emotion Needs a Better way to come up.</div>
-          <div class="logo-font android-create-character">
-            
+          <div class="screen_button_group">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--blue-grey-400">
+              Get started 
+            </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--blue-grey-400">
+              Get started 
+            </button>
           </div>
           <a href="#screens">
             <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
